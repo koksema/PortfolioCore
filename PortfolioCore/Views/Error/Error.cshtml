@@ -1,0 +1,104 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Sayfa Bulunamadı</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #dc3545; /* Mor tema - değiştirilebilir */
+            --text-color: #dc3545;
+            --background-color: #f8f9fa;
+            --button-color: #dc3545;
+            --button-hover: #dc3545;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--background-color);
+            font-family: 'Poppins', sans-serif;
+            color: var(--text-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .error-container {
+            text-align: center;
+            padding: 40px;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+            max-width: 600px;
+            width: 90%;
+        }
+
+        .error-icon {
+            width: 100px;
+            margin-bottom: 20px;
+        }
+
+        .error-code {
+            font-size: 72px;
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        .error-message {
+            font-size: 22px;
+            margin: 15px 0;
+        }
+
+        .error-description {
+            font-size: 16px;
+            color: #6c757d;
+            margin-bottom: 30px;
+        }
+
+        .home-link {
+            padding: 12px 24px;
+            background-color: var(--button-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+
+        .home-link:hover {
+            background-color: var(--button-hover);
+        }
+
+       
+            .error-message {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <!-- SVG Icon -->
+        <svg class="error-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="var(--primary-color)">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9 9 4.03 9 9z" />
+        </svg>
+
+        <div class="error-code">404</div>
+        <div class="error-message">Sayfa Bulunamadı</div>
+        <div class="error-description">Üzgünüz, aradığınız sayfa mevcut değil veya taşınmış olabilir.</div>
+        <a href="/" class="home-link">Anasayfaya Dön</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+﻿@model Service
+@{
+    ViewData["Title"] = "UpdateService";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h1>Hizmet Güncelleme Sayfası</h1>
+
+<form method="post">
+    <input type="hidden" asp-for="ServiceId" />
+    <label>Başlık</label>
+    <input type="text" class="form-control" asp-for="Title" style="border:1px solid black" />
+    <br />
+    <label>Açıklama</label>
+    <input type="text" class="form-control" asp-for="Description" style="border:1px solid black" />
+    <br />
+    <label>Icon</label>
+    <input type="text" class="form-control" asp-for="Icon" style="border:1px solid black" />
+    <br />
+    <button class="btn btn-success">Hizmet Kaydet</button>
+
+</form>

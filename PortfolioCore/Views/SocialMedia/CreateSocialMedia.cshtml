@@ -1,0 +1,21 @@
+﻿@model SocialMedia
+@{
+    ViewData["Title"] = "CreateSocialMedia";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h2>Yeni Sosyal Medya Hesabı Ekleme Sayfası</h2>
+
+<form method="post">
+    <label>İsim</label>
+    <input type="text" class="form-control" asp-for="SocialMediaName" style="border:1px solid black" />
+    <br />
+    <label>Resim</label>
+    <input type="text" class="form-control" asp-for="SocialMediaImage" style="border:1px solid black" />
+    <br />
+    <label>Link</label>
+    <input type="text" class="form-control" asp-for="SocialMediaUrl" style="border:1px solid black" />
+    <br />
+    <button class="btn btn-primary">Sosyal Medya Ekle</button>
+
+</form>
